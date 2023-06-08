@@ -7,7 +7,7 @@ import { faHome, faMessage, faPerson } from '@fortawesome/free-solid-svg-icons'
 export function Navbar() {
   return (
     <>
-      <nav class="text-white bg-gray-900 fixed">
+      <nav class="text-white bg-gray-900">
         <ul className='flex '>
           <li className=''><Link to="/">
         <FontAwesomeIcon icon={faHome}/>
