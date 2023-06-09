@@ -1,16 +1,27 @@
 import * as React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHeart } from '@fortawesome/free-solid-svg-icons'
+import { faHeart, faCommentDots, faShare } from '@fortawesome/free-solid-svg-icons'
 import "../index.css"
+
 export function Home() {
   return (
-    <div className='flex'>
-      <div id="video-container" className='w-[500px]'>
+    <div className='flex '>
+      <div id="video-container" className='w-full'>
+        <div id="options">
+          <div class="like">
+            <FontAwesomeIcon icon={faHeart} size="2xl" />
 
-      <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExYTk5N2ZjNGViMDExMDNjYTA4NDM4MDZiZmY1Y2E5ZDFkYTQwYzlmNCZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/hfLeOCKIYbRrW/giphy.gif" alt="" />
-
+          </div>
+          <div class="comment">
+            <FontAwesomeIcon icon={faCommentDots} size="2xl" style={{ color: "#ffffff", }} />
+          </div>
+          <div class="share">
+            <FontAwesomeIcon icon={faShare} size="2xl" style={{ color: "#ffffff", }} />
+          </div>
+          
+        </div>
       </div>
-      <div id="options"></div>
+
     </div>
   )
 }

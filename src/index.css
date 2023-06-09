@@ -1,5 +1,5 @@
 nav {
-  margin-top: 135%;
+  margin-top: 85vh;
   width: 100vw;
   height: 100px;
   border-top-left-radius: 30px;
@@ -29,10 +29,19 @@ li:hover {
   transform: scale(1.9);
 }
 
-.fixed-nav-bar {
-
-  width: 100%;
-  height: 50px;
-  background-color: #00a087;
+#video-container{
+  width:800px;
+  height:800px;
+  background-image: url("https://media2.giphy.com/media/hfLeOCKIYbRrW/giphy.gif?cid=ecf05e47ufsizm70j75202v8q2n9xz1kt2q4aa5q9ihb1jhd&ep=v1_gifs_search&rid=giphy.gif&ct=g"); 
+  background-size:cover;
 }
 
+#options{
+  margin-top:23vh;
+  margin-left:90vw;
+}
+
+
+.like, .share, .comment{
+  
+}
