@@ -1,2 +1,2 @@
 
-const swup = new Swup()
+const swup = new swup()
