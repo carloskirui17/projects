@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@3.0.0"></script>
+    <link rel="stylesheet" href="app.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <!-- rendering text from vue component -->
+        <div>{{name}}-{{title}}-{{age}}</div>
+        <div>{{count}}</div>
+
+        <!-- button and button events -->
+        <button @click="count++">increment</button>
+        <button @click="count--">decrement</button>
+        <button v-on:click="age++">increment age</button>
+
+        <!-- click events on elements other than divs -->
+        <div @click="changeTitle"> change title</div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
